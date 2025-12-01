@@ -8,7 +8,9 @@ plugins {
 android {
     namespace = "com.example.calendar_frontend"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    // Force NDK version for compatibility with some native plugins (e.g., shared_preferences_android, sqflite_android).
+    // This overrides the Flutter-managed value to ensure consistent builds in CI.
+    ndkVersion = "27.0.12077973"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
