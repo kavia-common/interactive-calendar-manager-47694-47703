@@ -1,0 +1,4 @@
+{
+    "command": "flutter pub get",
+    "working_directory": "/home/kavia/workspace/code-generation/interactive-calendar-manager-47694-47703/calendar_frontend"
+}
